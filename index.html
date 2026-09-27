@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High-Fidelity UI Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#"><span class="brand-mark">U</span> UI Studio</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#showcase">Showcase</a>
+    </nav>
+    <button class="btn btn-primary" onclick="showMessage('Welcome to UI Studio!')">Get Started</button>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">HIGH-FIDELITY UI DESIGN</span>
+        <h1>Turn ideas into a <span>beautiful digital experience.</span></h1>
+        <p>Clean layouts, thoughtful typography, accessible colors, clear buttons and visual hierarchy — built with modern UI/UX principles.</p>
+        <div class="actions">
+          <button class="btn btn-primary" onclick="showMessage('Design started!')">Start Designing →</button>
+          <a class="btn btn-secondary" href="#showcase">View Showcase</a>
+        </div>
+        <div class="trust">
+          <span>✓ Responsive</span>
+          <span>✓ Accessible</span>
+          <span>✓ User-friendly</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="window-top"><span></span><span></span><span></span><b>Dashboard Preview</b></div>
+        <div class="preview-grid">
+          <aside>
+            <div class="mini-logo">U</div>
+            <div class="side-item active">⌂</div>
+            <div class="side-item">◈</div>
+            <div class="side-item">▣</div>
+            <div class="side-item">⚙</div>
+          </aside>
+          <div class="preview-content">
+            <div class="preview-head"><div><small>Good morning</small><h3>Design Overview</h3></div><div class="avatar">AS</div></div>
+            <div class="stats">
+              <div><small>Projects</small><strong>24</strong><em>+12%</em></div>
+              <div><small>Users</small><strong>8.4K</strong><em>+8%</em></div>
+              <div><small>Engagement</small><strong>92%</strong><em>+5%</em></div>
+            </div>
+            <div class="chart">
+              <div class="chart-title">Weekly activity <span>•••</span></div>
+              <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section container">
+      <div class="section-heading">
+        <span class="eyebrow">DESIGN SYSTEM</span>
+        <h2>Everything users need, clearly presented.</h2>
+        <p>A consistent visual system makes an interface easier to understand and use.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="icon purple">✦</div><h3>Visual Hierarchy</h3><p>Important information stands out through size, spacing and contrast.</p></article>
+        <article class="feature-card"><div class="icon blue">⌘</div><h3>Responsive Layout</h3><p>The interface adapts smoothly to desktop, tablet and mobile screens.</p></article>
+        <article class="feature-card"><div class="icon green">✓</div><h3>Accessible Design</h3><p>Readable typography, strong contrast and familiar controls improve usability.</p></article>
+      </div>
+    </section>
+
+    <section id="showcase" class="section showcase">
+      <div class="container showcase-inner">
+        <div class="section-heading">
+          <span class="eyebrow">UI COMPONENTS</span>
+          <h2>Modern components with clear interactions.</h2>
+        </div>
+        <div class="component-board">
+          <div class="component-block">
+            <h4>Buttons</h4>
+            <div class="button-row">
+              <button class="btn btn-primary" onclick="showMessage('Primary action clicked')">Primary</button>
+              <button class="btn btn-secondary" onclick="showMessage('Secondary action clicked')">Secondary</button>
+              <button class="btn btn-dark" onclick="showMessage('Dark action clicked')">Dark</button>
+            </div>
+          </div>
+          <div class="component-block">
+            <h4>Color Palette</h4>
+            <div class="palette">
+              <span style="background:#6C63FF">Primary</span>
+              <span style="background:#22C55E">Success</span>
+              <span style="background:#F59E0B">Warning</span>
+              <span style="background:#111827">Dark</span>
+            </div>
+          </div>
+          <div class="component-block image-card">
+            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=80" alt="UI design workspace">
+            <div><h4>Visual storytelling</h4><p>Images and cards add context without overwhelming the interface.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <footer><p>© 2026 UI Studio · High-Fidelity UI Design Task</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
